@@ -1,0 +1,221 @@
+@import url(common/reset.css);
+@import url(common/header.css);
+@import url(common/footer.css);
+
+
+.header {
+    background-color: #ffffff;
+}
+.inner-header {
+    position: relative;
+}
+.inner-header::after {
+    position: absolute;
+    bottom: -1px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #cccccc
+}
+.inner-container {
+
+}
+.sections {
+    width: 100%;
+    max-width: 1200px;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.sections .section.sec1 {
+    /* border: 1px solid; */
+}
+.sections .section.sec1 h2.title {
+    /* border: 1px solid; */
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    position: relative;
+}
+.sections .section.sec1 h2.title::after {
+    position: absolute;
+    bottom: -1px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(250, 65, 111);
+}
+.sections .section.sec1 .img-box {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+.sections .section.sec1 .img-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.sections .section.sec2 {
+    /* padding: 50px 0 ; */
+    /* border: 1px solid; */
+    width: 100%;
+}
+.sections .section.sec2 h2.title {
+    font-size: 30px;
+    font-weight: 300;
+    color: #444444;
+    position: relative;
+    line-height: 100px;
+    /* padding: 0 20px; */
+    box-sizing: border-box;
+}
+.sections .section.sec2 h2.title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    /* bottom: -30px; */
+    background-color: #000000;
+}
+.sections .section.sec2  p.sub-title {
+    /* border: 1px solid; */
+    /* padding: 0 20px; */
+    position: relative;
+    line-height: 80px;
+    box-sizing: border-box;
+}
+.sections .section.sec2 p.sub-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    /* bottom: -30px; */
+    background-color: #cccccc;
+}
+.sections .section.sec2 .store-con {
+    /* border: 1px solid; */
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.sections .section.sec2 .store-con .left-store {
+    flex: 1;
+    /* border: 1px solid; */
+}
+.sections .section.sec2 .store-con .left-store .sec-con {
+    position: relative;
+    height: 350px;
+}
+.sections .section.sec2 .store-con .left-store .sec-con .gallery {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+}
+.sections .section.sec2 .store-con .left-store .sec-con .gallery ul {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+}
+.sections .section.sec2 .store-con .left-store .sec-con .gallery ul li {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0;
+    visibility: 1;
+    transition: all 0.5s ease-in-out;
+}
+.fadeLiOn {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.sections .section.sec2 .store-con .left-store .sec-con .gallery ul li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.sections .section.sec2 .store-con .left-store .sec-con span.arrow {
+    width: 30px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.sections .section.sec2 .store-con .left-store .sec-con span.arrow.left {
+    display: block;
+    background: url(../img/sub4Page/btn_arrow.jpg) no-repeat 0%/cover;
+}
+
+.sections .section.sec2 .store-con .left-store .sec-con span.arrow.right {
+    display: block;
+    background: url(../img/sub4Page/btn_arrow.jpg) no-repeat 100%/cover;
+}
+.sections .section.sec2 .store-con .left-store .sec-con .bcon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    display: flex;
+    /* border: 1px solid; */
+    background-color: #ffffff;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.sections .section.sec2 .store-con .left-store .sec-con .bcon .number {
+    width: 30px;
+    height: 35px;
+    position: relative;
+    /* border: 1px solid; */
+}
+.sections .section.sec2 .store-con .left-store .sec-con .bcon .number p {
+    position: absolute;
+    right: 3px;
+    top: 0;
+    line-height: 35px;
+}
+.sections .section.sec2 .store-con .left-store .sec-con .bcon .number>ul {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+}
+.sections .section.sec2 .store-con .left-store .sec-con .bcon .number>ul>li {
+    position: absolute;
+    left: 3px;
+    width: 100%;
+    height: inherit;
+    line-height: 35px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
+.sections .section.sec2 .store-con .right-store {
+    flex: 1;
+    /* border: 1px solid; */
+}
+.sections .section.sec2 .where {
+    background-color: #f2f2f2;    
+    padding: 20px 10px;
+}
+.sections .section.sec2 .where p {
+    line-height: 30px;
+}
+.sections .section.sec2 .where p.two {
+    color: #444444;
+    font-size: 14px;
+}
+.sections .section.sec2 .where p.three {
+    color: #6b6b6b;
+    font-size: 12px;
+}

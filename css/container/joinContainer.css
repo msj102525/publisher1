@@ -1,0 +1,173 @@
+.header {
+    position: relative;
+}
+.header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #cccccc;
+}
+
+.container .join-container {
+    width: 100%;
+    height: 100vh;
+    border: 0px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px 0; */
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.container .join-container .join-form {
+    width: 100%;
+    min-width: 600px;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px #000000;
+}
+.container .join-container .join-form h1.title {
+    text-align: center;
+    border: 0px solid;
+    box-sizing: border-box;
+    padding: 50px 0;
+    font-size: 40px;
+    color: #222;
+}
+.container .join-container .join-form .join-con {
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+    box-shadow: 0px 0px 1px #000000;
+}
+.container .join-container .inner-container .join-con ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.container .join-container .inner-container .join-con ul li {
+    /* border: 1px solid; */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+.container .join-container .inner-container .join-con ul li input {
+    line-height: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: 0;
+    font-size: 14px;
+    color: #666;
+    border: 1px solid #cccccc;
+}
+.container .join-container .inner-container .join-con ul li input:focus {
+    box-shadow: 0px 0px 2px #000000;
+}
+.container .join-container .inner-container .join-con ul li.li1 input {
+    flex: 1;
+}
+.container .join-container .inner-container .join-con ul li.li2 {
+    gap: 10px;
+    justify-content: space-between;
+}
+.container .join-container .inner-container .join-con ul li.li2 input {
+    flex: 3;
+}
+
+
+.container .join-container .inner-container .join-con ul li.li2 .gender span {
+    font-size: 0;
+    visibility: hidden;
+}
+.container .join-container .inner-container .join-con ul li.li2 .gender {
+    display: flex;
+    gap: 5px;
+}
+.container .join-container .inner-container .join-con ul li.li2 .gender input[type=radio] {
+    display: none;
+}
+
+.container .join-container .inner-container .join-con ul li.li2 .gender input[type=radio] + label.male_l::before {
+    content: '남자';
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    color: #666;
+}
+.container .join-container .inner-container .join-con ul li.li2 .gender input[type=radio] + label.female_l::before {
+    content: '여자';
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    color: #666;
+}
+.container .join-container .inner-container .join-con ul li.li2 .gender input[type=radio]:checked + label::before {
+    border: 1px solid rgb(250, 149, 149);
+    color: rgb(250, 149, 149);
+}
+.container .join-container .inner-container .join-con ul li.li3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.container .join-container .inner-container .join-con ul li.li3 select {
+    flex: 1;
+}
+.container .join-container .inner-container .join-con ul li.li3 input {
+    flex: 3;
+}
+.container .join-container .inner-container .join-con ul li.li4 {
+    flex-direction: column;
+}
+.container .join-container .inner-container .join-con ul li.li4 p {
+    font-size: 14px;
+    padding: 5px 0;
+}
+.container .join-container .inner-container .join-con ul li.li5 {
+    justify-content: center;
+    gap: 10px;
+}
+.container .join-container .inner-container .join-con ul li.li5 input {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.container .join-container .inner-container .join-con ul li.li5 input:hover {
+    border: 1px solid rgb(250, 149, 149);
+    color: rgb(250, 149, 149);
+}
+/* 테블릿 980px */
+@media only screen and (max-width:980px){
+    html {
+        font-size: 14px;
+    }
+    
+}
+/* 모바일 768px */
+@media only screen and (max-width:768px){
+    html {
+        font-size: 10px;
+    }       
+}
+/* 모바일 540px */
+@media only screen and (max-width:540px){
+    html {
+        font-size: 5px;
+    }
+       
+}
+
+
